@@ -2,13 +2,13 @@
 //Evan Nibbe
 //Srivatsan Srirangam
 //----------------------------------------------------------------------
-module Breadboard	(w,x,y,z,r0,r1,r2,r3,r4,r5,r6,r7,r8,r9); //Module Header
-input w,x,y,z;                        //Specify inputs
-output r0,r1,r2,r3,r4,r5,r6,r7,r8,r9;                        //Specify outputs
-reg r0,r1,r2,r3,r4,r5,r6,r7,r8,r9;                           //Output is a memory area.
+module Breadboard	(w,x,y,z,r0,r1,r2,r3,r4,r5,r6,r7,r8,r9);	//Module Header
+input w,x,y,z;                        					//Specify inputs
+output r0,r1,r2,r3,r4,r5,r6,r7,r8,r9;                    	  	//Specify outputs
+reg r0,r1,r2,r3,r4,r5,r6,r7,r8,r9;                           		//Output is a memory area.
 
-always @ ( w,x,y,z,r0,r1,r2,r3,r4,r5,r6,r7,r8,r9) begin      //Create a set of code that works line by line
-                                      // if the variables are used
+always @ ( w,x,y,z,r0,r1,r2,r3,r4,r5,r6,r7,r8,r9) begin      		//Create a set of code that works line by line
+                                      					// if the variables are used
 
 
 //Hey guys add your formulas to this section
@@ -19,11 +19,11 @@ always @ ( w,x,y,z,r0,r1,r2,r3,r4,r5,r6,r7,r8,r9) begin      //Create a set of c
 //f1= xz+yz+wx
 	r1= (x & z) | (y & z) | (w & x);
 
-//f2= zwx + ywx + yzw +yzx                                         //Comment for the formula
-r2= z & w & x | y & w & x | y & z & w | y & z & x;                 //Bitwise operation of the formula
+//f2= zwx + ywx + yzw +yzx                                         	//Comment for the formula
+	r2= (z & w & x) | (y & w & x) | (y & z & w) | (y & z & x);	//Bitwise operation of the formula
 
 //f3= yx + zw
-r3= y & x | z & w;
+	r3= (y & x) | (z & w);
 
 //f4= yz
 	r4= (y & z);
@@ -43,6 +43,7 @@ r8= y & z;
 //f9= w’x’y’z + w’x’yz’ + w’xy’z’ + w’xyz + wxy’z + wxyz’ + wx’y’z’ + wx’yz;
 	r9= ((!w) & !(x) & !(y) & (z)) | ((!w) & !(x) & (y) & !(z)) | ((!w) & (x) & !(y) & !(z)) | ((!w) & (x) & (y) & (z)) | ((w) & (x) & !(y) & (z)) | ((w) & (x) & (y) & !(z)) | ((w) & !(x) & !(y) & !(z)) | ((w) & !(x) & (y) & (z));
 //		1				2			3				4			5			8
+
 end                                   // Finish the Always block
 
 endmodule                             //Module End
