@@ -1,6 +1,8 @@
 //Eddie Carrizales
 //Evan Nibbe
 //Srivatsan Srirangam
+//This iVerilog code will display the following equations using a truth table.
+//The iVerilog code can be modified and any other equations can be added to also be displayed.
 //----------------------------------------------------------------------
 module Breadboard	(w,x,y,z,r0,r1,r2,r3,r4,r5,r6,r7,r8,r9);	//Module Header
 input w,x,y,z;                        					//Specify inputs
