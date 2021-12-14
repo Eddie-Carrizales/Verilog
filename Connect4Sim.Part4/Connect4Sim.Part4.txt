@@ -1,0 +1,81 @@
+./run_Part4.sh 
+Compiling better_base.c...
+Making better_base.vpi from  better_base.o...
+Connect4Sim.Part4.v:1907: tgt-vvp sorry: procedural continuous assignments are not yet fully supported. The RHS of this assignment will only be evaluated once, at the time the assignment statement is executed.
+Connect4Sim.Part4.v:1929: tgt-vvp sorry: procedural continuous assignments are not yet fully supported. The RHS of this assignment will only be evaluated once, at the time the assignment statement is executed.
+Connect4Sim.Part4.v:1939: tgt-vvp sorry: procedural continuous assignments are not yet fully supported. The RHS of this assignment will only be evaluated once, at the time the assignment statement is executed.
+
+$my_sqrt PLI compiletf function.
+
+
+$newton PLI compiletf function.
+
+
+StartOfSim callback for VPI functions.
+
+
+StartOfSim callback for VPI functions.
+
+inputA  inputA (bin)            inputB  inputB (bin)            Operation       op_code         Output  Output (bin)                            Error
+65535   1111111111111111            0   0000000000000000        RESET           00011            0      00000000000000000000000000000000        00
+65535   1111111111111111            0   0000000000000000        NO-OP           10101            0      00000000000000000000000000000000        00
+65535   1111111111111111            0   0000000000000000        ADD             00000        65535      00000000000000001111111111111111        00
+ 8191   0001111111111111        65535   1111111111111111        ADD             00000         8190      00000000000000000001111111111110        01
+ 8191   0001111111111111        65535   1111111111111111        RESET           00011         8190      00000000000000000001111111111110        01
+ 9999   0010011100001111            0   0000000000000000        ADD             00000         9999      00000000000000000010011100001111        00
+ 1003   0000001111101011         9999   0010011100001111        SUB             10000        56540      00000000000000001101110011011100        01
+ 1003   0000001111101011        56540   1101110011011100        MUL             00100     56775156      00000011011000100101000111110100        00
+ 1003   0000001111101011        20980   0101000111110100        DIV             00010            0      00000000000000000000000000000000        00
+ 1003   0000001111101011            0   0000000000000000        MOD             00001   4294967295      11111111111111111111111111111111        10
+ 1003   0000001111101011        65535   1111111111111111        AND             00101         1003      00000000000000000000001111101011        00
+ 1003   0000001111101011         1003   0000001111101011        OR              00110         1003      00000000000000000000001111101011        00
+ 1003   0000001111101011         1003   0000001111101011        NOT             10100        64532      00000000000000001111110000010100        00
+ 1003   0000001111101011        64532   1111110000010100        XOR             10010        65535      00000000000000001111111111111111        00
+ 1003   0000001111101011        65535   1111111111111111        XNOR            10011         1003      00000000000000000000001111101011        00
+ 1003   0000001111101011         1003   0000001111101011        NAND            00111        64532      00000000000000001111110000010100        00
+ 1003   0000001111101011        64532   1111110000010100        NOR             10001            0      00000000000000000000000000000000        00
+ 1003   0000001111101011            0   0000000000000000        PRESET          10111   4294967295      11111111111111111111111111111111        00
+ 
+---------------------------| First Math Operation: FIBONNACI SERIES |---------------------------
+         0
+         1
+         1
+         2
+         3
+         5
+         8
+        13
+        21
+        34
+        55
+        89
+       144
+       233
+       377
+       610
+       987
+      1597
+      2584
+      4181
+      6765
+     10946
+     17711
+ 
+------------------------------| Second Math Operation: GEOMETRIC EQUATIONS |-------------------------------
+ 
+ 
+--------------------------------| CONE WITH HEIGHT =  8 AND RADIUS =  6 |----------------------------------
+Surface Area :  301.5936
+Volume :        301.5935
+Note: Surface area and volume are very close since the height, radius, and slope form a right triangle in the cone.
+ 
+--------------------------------------| SPHERE WITH RADIUS =   6 |-----------------------------------------
+Surface area :  452.3904
+Volume :        904.7705
+ 
+----------------------------------------| CUBE WITH EDGE =   9 |-------------------------------------------
+Surface area :  486
+Volume :        729
+ 
+On the C side, the result of Newton's method was -1.356171
+The root of 0=         1 + -         4x +          6x^2 +          7x^3 is -         1.      3561
