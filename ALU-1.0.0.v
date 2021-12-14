@@ -1,6 +1,6 @@
 //Evan Nibbe, Srivatsan Srirangam, Eddie C.
 //October 10, 2021
-//Part2.v
+//ALU-1.0.0.v
 //This code is derived from the code given by Dr. Eric Becker
 //This code is an Arithmetic Logic Unit that can Multiply, Divide, Mod, AND, OR, NOT, XOR, XNOR, NAND, NOR, PRESET two inputs.
 //It will display the output in binary and decimal.
