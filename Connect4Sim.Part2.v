@@ -1,4 +1,4 @@
-//Evan Nibbe, Srivatsan Srirangam, Eddie C.
+//Evan Nibbe, Eddie Carrizales, Srivatsan Srirangam
 //October 30, 2021
 //Connect4Sim.Part2.v
 //This code is derived from the code given by Dr. Eric Becker
