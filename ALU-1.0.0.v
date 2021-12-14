@@ -2,7 +2,9 @@
 //October 10, 2021
 //Part2.v
 //This code is derived from the code given by Dr. Eric Becker
-//
+//This code is an Arithmetic Logic Unit that can Multiply, Divide, Mod, AND, OR, NOT, XOR, XNOR, NAND, NOR, PRESET two inputs.
+//It will display the output in binary and decimal.
+//The operations can be made using opcode which runs through a multiplexor to change the operation. 
 //=============================================
 // Half Adder
 //=============================================
