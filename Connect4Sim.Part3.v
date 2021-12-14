@@ -1,4 +1,4 @@
-//Evan Nibbe, Srivatsan Srirangam, Eddie C.
+//Evan Nibbe, Eddie Carrizales, Srivatsan Srirangam
 //November 21, 2021
 //ALU-2.1.0.v
 //This code is derived from the code given by Dr. Eric Becker
